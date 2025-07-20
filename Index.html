@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VaultofCodes - Certificate Verifier</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Branding -->
+  <header class="brand-header">
+    <img src="logo.png" alt="VaultofCodes Logo" class="brand-logo" />
+    <h1 class="brand-title">VaultofCodes</h1>
+  </header>
+
+  <nav class="nav-bar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#verify">Verify</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container" id="verify">
+      <input id="identifier" type="text" placeholder="Enter Email or ID"/>
+      <button onclick="verifyStudent()">Verify</button>
+    </div>
+
+    <div id="result"></div>
+    <div class="spinner hidden"></div>
+  </main>
+
+  <div id="toast"></div>
+  <button id="scrollTopBtn" onclick="scrollToTop()">⬆</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
